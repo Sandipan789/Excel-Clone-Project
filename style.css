@@ -1,0 +1,201 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.page-action-cont{
+  height: 3rem;
+  background-color: #218c74;
+  display: flex;
+  align-items: flex-end;
+}
+
+.page-action{
+  margin: 0.5rem;
+  color: #f1f2f6;
+  padding-left: 1rem;
+}
+
+.cell-action-cont{
+  height: 3rem;
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.cell-action-cont > *{
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.cell-action-cont >  *:hover{
+  cursor: pointer;
+}
+
+.font-family-prop{
+  padding: 0.2rem;
+  border: none;
+  outline: none;
+}
+
+.font-size-prop{
+  padding: 0.2rem;
+  border: none;
+  outline: none;
+}
+
+.formula-actions-cont {
+  height: 2rem;
+  background-color: #ecf0f1;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+.formula-actions-cont > * {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+.formula-icon {
+  width: 1.2rem; 
+}
+.address-bar {
+  width: 5rem;
+  text-align: center;
+}
+.formula-bar {
+  width: calc( 100vw - 5rem - 0.7rem - 0.7rem - 0.7rem );
+}
+.formula-actions-cont > input {
+  border: none;
+  outline: none;
+  height: 70%;
+}
+
+.sheet-actions-cont {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  gap: 1rem;
+  background-color: #ecf0f1;
+}
+.sheet-actions-cont > * {
+  display: inline-block;
+}
+.sheet-add-icon {
+  width: 2vw;
+}
+.sheet-add-icon:hover {
+  cursor: default;
+}
+
+
+
+.sheets-folder-cont {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  width: 5rem;
+  width: calc( 100vw - 2vw );
+  overflow: auto;
+}
+.sheet-folder {
+  height: 80%;
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration-thickness: 3px;
+  font-size: 0.9rem;
+  /* background-color: lightblue; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sheet-content{
+  width: 4rem;
+}
+
+.grid-cont{
+  height: calc( 100vh - 11rem);
+  position: relative;
+  overflow: scroll;
+  background-color: #ecf0f1;
+}
+
+.dummy-container{
+  height: 2rem;
+  width: 2rem;
+  background-color: rgb(99, 95, 95);
+  position: fixed;
+  z-index: 3;
+}
+
+.address-col-cont{
+  position: sticky;
+  top: 2rem;
+  left: 0;
+}
+
+.address-col{
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dfe4ea;
+}
+
+.address-row{
+  height: 2rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dfe4ea;
+}
+
+.cell-cont{
+  position: absolute;
+  top: 0;
+  left: 2rem;
+}
+
+.gridRow{
+  display: flex;
+}
+
+.cells{
+  height: 2rem;
+  width: 5rem;
+  border: 1px solid #dfe4ea;
+  outline: none;
+}
+
+.address-row-cont{
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 2rem;
+}
+
+.color-prop{
+  position: relative;
+}
+
+.color-prop > input{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.color-prop > *:hover{
+  cursor: pointer;
+}
